@@ -1,10 +1,13 @@
-var name, lastName, fullName;
+var hotel = {
+    name: "",
+    location: "",
+}
 
-name = "Isa";
-lastName = "Puerta";
+hotel.name = prompt ("Introduce el nombre del hotel");
+// var concatNamehotel = "Hotel " + nameHotel;
+document.getElementById("hotel-name").innerHTML = "Hotel " + hotel.name;
 
-fullName = name + " " + lastName;
+hotel["location"] = prompt("introduce la ubicación del hotel");
+document.getElementById("hotel-location").innerHTML = hotel["location"];
 
-var nombre = "mi texto tiene\"comillas\""
-
-console.log (nombre)
+console.log(hotel)
